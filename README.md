@@ -1,9 +1,3 @@
-# Test it
+# NeoVim-Config
 
-Clone the project in `~/.config`:
-
-    git clone git@github.com:vjousse/neovim-from-scratch.git ~/.config
-
-Start `nvim` with this configuration:
-
-    NVIM_APPNAME=nvim-from-scratch nvim
+This repository is based on the [Vincent Jousse Repository](https://github.com/vjousse/neovim-from-scratch).

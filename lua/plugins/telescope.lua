@@ -34,12 +34,9 @@ return {
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
 
-		keymap.set(
-			"n",
-			"<leader>ff",
-			"<cmd>Telescope find_files<cr>",
-			{ desc = "Recherche de chaînes de caractères dans les noms de fichiers" }
-		)
+		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Recherche un fichier" })
+		vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Rechercher un fichier récent" })
+
 		keymap.set(
 			"n",
 			"<leader>fg",
@@ -50,7 +47,7 @@ return {
 			"n",
 			"<leader>fb",
 			"<cmd>Telescope buffers<cr>",
-			{ desc = "Recherche de chaînes de caractères dans les noms de buffers" }
+			{ desc = "Recherche de chaînes de caractères dans les noms de fichiers" }
 		)
 		keymap.set(
 			"n",

@@ -45,9 +45,11 @@ return {
 			-- Ça permettra à votre configuration d'être plus portable
 			ensure_installed = {
 				"cssls",
+				"clangd",
 				"elmls",
 				"graphql",
 				"html",
+				"lemminx",
 				"lua_ls",
 				"pylsp",
 				-- "ruff_lsp",

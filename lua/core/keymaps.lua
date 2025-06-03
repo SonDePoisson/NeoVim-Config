@@ -3,6 +3,7 @@ vim.g.mapleader = " "
 
 -- Raccourci pour la fonction set
 local keymap = vim.keymap.set
+-- local unmap = vim.keymap.del
 
 -- on efface le surlignage de la recherche
 keymap("n", "<leader>h", ":nohl<CR>", { desc = "Effacer le surlignage de la recherche" })
@@ -21,3 +22,7 @@ keymap("n", "<leader>x", ":bd<CR>", { desc = "Fermer le buffer" })
 -- Commenter une ligne ou une sélection avec <leader>/
 keymap("n", "<leader>/", "gcc", { desc = "Commenter la ligne", remap = true })
 keymap("v", "<leader>/", "gc", { desc = "Commenter la sélection", remap = true })
+
+-- Retirer les mappings par défauts
+-- unmap("n", "<leader>s")
+-- unmap("n", "<leader>S")

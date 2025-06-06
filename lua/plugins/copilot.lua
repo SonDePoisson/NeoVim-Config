@@ -10,6 +10,9 @@ return {
 					accept = "<Tab>",
 				},
 			},
+			panel = {
+				enabled = false,
+			},
 		})
 	end,
 }
